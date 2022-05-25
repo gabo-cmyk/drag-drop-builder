@@ -1,0 +1,12 @@
+<svg width="821" height="424" viewBox="0 0 821 424" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M820 1H1V423H820V1Z" fill="white" stroke="black" stroke-width="2"/>
+<line x1="274" y1="413" x2="274" y2="11" stroke="#4D4D4D" stroke-width="2" stroke-linecap="square" stroke-dasharray="5 8"/>
+<rect x="265" y="404" width="16" height="15" fill="white"/>
+<rect x="265" y="3" width="16" height="15" fill="white"/>
+<line x1="548" y1="413" x2="548" y2="11" stroke="#4D4D4D" stroke-width="2" stroke-linecap="square" stroke-dasharray="5 8"/>
+<rect x="539" y="404" width="16" height="15" fill="white"/>
+<rect x="539" y="3" width="16" height="15" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M683.301 191H677.701V205.7L663 205.7V211.3H677.701V226H683.301V211.3H698V205.7L683.301 205.7V191Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M409.301 191H403.701V205.7L389 205.7V211.3H403.701V226H409.301V211.3H424V205.7L409.301 205.7V191Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M136.301 191H130.701V205.7L116 205.7V211.3H130.701V226H136.301V211.3H151V205.7L136.301 205.7V191Z" fill="black"/>
+</svg>

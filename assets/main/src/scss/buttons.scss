@@ -1,0 +1,204 @@
+$transition: .25s ease;
+$black: #000000;
+$white: #ffffff;
+$blue: #59c4ff;
+$light-grey: #f8f8f8;
+
+.primary-btn{
+    font-family: 'Elle Gabor Std SemBd', sans-serif;
+    font-size: .875rem;
+    line-height: .875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    padding: .75rem 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #D0D0D0;
+    margin-top: 1.0625rem;
+    &:hover{
+        border-color: #000000;
+    }
+
+    @media(max-width: 992px) {
+        margin-top: 1.25rem;
+    }
+
+    span {
+        transform: translateY(1px);
+        text-transform: uppercase;
+        @media(max-width: 992px) {
+            transform: translateY(2px);
+        }
+    }
+
+
+    svg {
+        margin-left: .25rem;
+        transition: .25s;
+    }
+
+    &:hover {
+        svg {
+            transform: translateX(.3rem);
+        }
+    }
+}
+
+.confirm-btn, .embed__btn, .uploaded-file__btn {
+    cursor: default;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 2rem;
+    height: 2.5rem;
+    text-transform: uppercase;
+    background-color: rgba(89, 196, 255, 1);
+    color: #ffffff;
+    width: fit-content;
+}
+
+.control-btns {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    background-color: $white !important;
+    border: 1px solid #ebebeb !important;
+    z-index: 1;
+    display: block;
+}
+
+.remove-template-btn {
+    background: url("../images/icons/trash.svg") no-repeat;
+    background-position: center;
+    background-size: 1.25rem;
+}
+
+.drag-template-btn {
+    background: url("../images/icons/drag.svg") no-repeat;
+    background-position: center;
+    background-size: 1.5rem;
+}
+
+.duplicate-template-btn {
+    background: url("../images/icons/duplicate.svg") no-repeat;
+    background-position: center;
+    background-size: 1.25rem;
+}
+
+.preview-template-btn {
+    background: url("../images/icons/preview.svg") no-repeat;
+    opacity: .25;
+    pointer-events: none;
+    background-position: center;
+    background-size: 1.25rem;
+    display: none;
+    transition: $transition;
+
+    &.is-enabled {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.images-template-btn {
+    background: url("../images/icons/image_icon.svg") no-repeat;
+    background-position: center !important;
+    background-size: 1.25rem !important;
+    display: none;
+
+    &.active {
+        background: url("../images/icons/add_image-icon.svg") no-repeat;
+    }
+}
+
+.setting-template-btn {
+    background: url("../images/icons/settings.svg") no-repeat;
+    background-position: center;
+    background-size: 1.25rem;
+    display: none;
+}
+
+.embed__btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: $transition;
+    height: 3rem;
+
+    &.is-disabled {
+        pointer-events: none;
+        opacity: .5;
+    }
+}
+
+.delete-img-btn {
+    @keyframes buttonFadeIn {
+        from {
+            transform: translateY(-1rem);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    animation: buttonFadeIn .25s forwards;
+    position: absolute;
+    display: block;
+    box-shadow: -10px 4px 30px rgba(0, 0, 0, .1);
+    top: .5rem;
+    right: .5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 6rem;
+    background: url("../images/icons/trash_white.svg") no-repeat center;
+    background-size: 1.25rem;
+    background-color: #d42323;
+
+}
+
+.page-builder__sidebar-hide-btn {
+    position: absolute;
+    left: -2rem;
+    z-index: 9;
+    transition: $transition;
+    width: 2rem;
+    height: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb;
+    top: 50%;
+    transform: translateY(-50%);
+
+    svg {
+        transition: $transition;
+    }
+}
+
+.form-options-hide-btn {
+    position: absolute;
+    left: -1.75rem;
+    z-index: 9;
+    transition: $transition;
+    width: 1.75rem;
+    height: 2.5rem;
+    cursor: pointer;
+    //display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb;
+    top: 50%;
+    transform: translateY(-50%);
+
+    svg {
+        transition: $transition;
+        transform: rotate(-180deg);
+        height: .75rem;
+        width: 1rem;
+    }
+}

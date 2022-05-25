@@ -1,0 +1,16 @@
+<?php
+
+/* @var \yii\web\View $this */
+/* @var \app\modules\builder\assets\BuilderAsset $builderAsset */
+?>
+<div class="template products-template" data-template="6" data-products data-template-type="products">
+    <div class="products-template__inner">
+        <div class="products-template__controls">
+            <h3 class="mt-0 text-center">Lorem ipsum dolor.</h3>
+            <span
+                class="d-block mb-3 text-center">Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ad, sint.</span>
+            <select class="js-example-basic-multiple product-select" multiple="multiple"></select>
+        </div>
+        <div class="row product-cards-row"></div>
+    </div>
+</div>

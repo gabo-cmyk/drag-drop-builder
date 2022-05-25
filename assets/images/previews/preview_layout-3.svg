@@ -1,0 +1,12 @@
+<svg width="821" height="424" viewBox="0 0 821 424" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M820 1H1V423H820V1Z" fill="white" stroke="#C4C4C4" stroke-width="2"/>
+<line x1="274" y1="413" x2="274" y2="11" stroke="#4D4D4D" stroke-width="2" stroke-linecap="square" stroke-dasharray="5 8"/>
+<rect x="265" y="404" width="16" height="15" fill="white"/>
+<rect x="265" y="3" width="16" height="15" fill="white"/>
+<line x1="548" y1="413" x2="548" y2="11" stroke="#4D4D4D" stroke-width="2" stroke-linecap="square" stroke-dasharray="5 8"/>
+<rect x="539" y="404" width="16" height="15" fill="white"/>
+<rect x="539" y="3" width="16" height="15" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M687.359 191H680.639V208.64H663V215.36H680.639V233H687.359V215.36H705V208.64H687.359V191Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M413.359 191H406.639V208.64H389V215.36H406.639V233H413.359V215.36H431V208.64H413.359V191Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M140.359 191H133.639V208.64H116V215.36H133.639V233H140.359V215.36H158V208.64H140.359V191Z" fill="#C4C4C4"/>
+</svg>

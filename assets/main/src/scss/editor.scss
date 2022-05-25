@@ -1,0 +1,16 @@
+$blue: #59c4ff;
+
+
+.mce-edit-focus {
+    outline-offset: .5rem;
+    border-radius: 0;
+    outline: 1px solid $blue
+}
+
+.ck-editor__editable {
+    padding: 1rem !important;
+}
+
+.ck.ck-editor__editable_inline > :first-child, .ck.ck-editor__editable_inline > :last-child {
+    margin: 0 !important;
+}

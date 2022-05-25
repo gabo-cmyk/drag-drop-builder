@@ -1,0 +1,203 @@
+$transition: .25s ease;
+$black: #000000;
+$white: #ffffff;
+$green: #00ffb7;
+$light-grey: #f8f8f8;
+
+@mixin nicescroll($bgc, $scrollbar) {
+    &::-webkit-scrollbar {
+        width: .5rem;
+        height: .7rem;
+        background-color: $bgc;
+    }
+    &::-webkit-scrollbar-track {
+        display: none;
+    }
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: $scrollbar;
+    }
+    &::-webkit-scrollbar-corner {
+        display: none;
+    }
+    scrollbar-width: thin;
+    scrollbar-color: $scrollbar transparent;
+}
+
+[data-theme='dark-theme'] {
+    font-family: sans-serif !important;
+    background: url("../images/icons/drop_white.svg") no-repeat center;
+    background-size: 3rem;
+    background-color: $black !important;
+
+    &:before {
+        color: $white;
+    }
+
+    textarea, input {
+        background-color: transparent !important;
+    }
+
+    p, span, label, h1, h2, h3, h4, textarea, .gallery-type__img-wrapper, .gallery-type__label, [data-form] .form:before, [data-form] .form input[type="file"]:before {
+        color: $white !important;
+        font-family: sans-serif !important;
+    }
+
+    .confirm-btn, .embed__btn, .uploaded-file__btn {
+        background-color: $green;
+        color: black;
+    }
+
+    .img-index {
+        background-color: $black !important;
+        color: $white !important;
+    }
+
+    .gallery-drop-area__images, .is-updated .gallery-types-wrapper {
+        @include nicescroll($black, #262626);
+    }
+
+    .floating-placeholder {
+        background-color: $black !important;
+    }
+
+    .template.is-selected:before {
+        border: 1px dashed rgba(255, 255, 255, .4);
+    }
+
+    .uploaded-file--file, textarea, [type="email"], [type="text"], [data-form] {
+        border: 1px solid rgba(255, 255, 255, .3) !important;
+    }
+
+    .form-input-types {
+        border-right: 1px solid rgba(255, 255, 255, .5) !important;
+    }
+
+    [data-form] .form:after {
+        background: url("../images/icons/info-white.svg") no-repeat;
+        background-position: center 50%;
+        background-size: 1.75rem;
+    }
+
+    .template-form .form input[type="file"] {
+        &:before {
+            background-color: #2b2b2b !important;
+        }
+
+        &:after {
+            background: url("../images/icons/file-upload-white.svg") no-repeat;
+            background-position: center calc(50% - .75rem);
+        }
+    }
+
+    .upload-drop-area.is-empty {
+        &:after {
+            background: url('../images/icons/add_image-icon-white.svg') no-repeat center;
+        }
+
+        &:before {
+            color: #868686;
+        }
+    }
+
+    [data-gallery].is-updated .gallery-drop-area .gallery-drop-area__inner-wrapper.is-empty:after {
+        background: url("../images/icons/add_image-icon-white.svg") no-repeat center;
+    }
+
+    .droppable-divider {
+        line {
+            stroke: rgba(255, 255, 255, .76) !important;
+        }
+    }
+
+    .droppable-divider {
+        .droppable-divider__inner {
+            background-color: rgba(255, 255, 255, .1) !important;
+        }
+
+        &:hover {
+            .droppable-divider__inner {
+                background-color: rgba(255, 255, 255, .25) !important;
+            }
+        }
+    }
+
+    &.area-active {
+        .droppable-divider {
+            &:hover {
+                background-color: rgba(255, 255, 255, .25) !important;
+
+                .droppable-divider__inner {
+                    background-color: rgba(255, 255, 255, .25) !important;
+
+                    .drop-icon {
+                        background-image: url("../images/icons/plus_icon-alt.svg");
+                    }
+                }
+            }
+        }
+    }
+
+    .gallery-preview {
+        background-color: $black;
+    }
+
+    [data-gallery] {
+        border: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .uploaded-file__icon {
+        path {
+            &:last-of-type {
+                fill: $white;
+            }
+        }
+    }
+
+    .embed-template__headline {
+        path {
+            fill: $white;
+        }
+    }
+
+    .upload-drop-area {
+        background-color: #2b2b2b;
+        outline: #2B2B2BFF solid .75rem;
+        border: 1px dashed #121212;
+
+        &:after {
+            border: 1px dashed #121212 !important;
+        }
+    }
+
+    .gallery-types {
+        border-right: 1px solid #1d1d1d;
+    }
+
+    .gallery-drop-area__inner-wrapper {
+        background-color: #2b2b2b;
+        outline: #1d1d1d solid .75rem;
+        border: .75rem solid #2b2b2b;
+
+        &:before {
+            color: $white;
+        }
+
+        &:after {
+            border: 1px dashed #121212 !important;
+        }
+    }
+
+
+}
+
+[data-theme="orange-theme"] {
+    background-color: #FFB800 !important;
+
+    .floating-placeholder {
+        background-color: #FFB800 !important;
+    }
+}
