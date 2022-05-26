@@ -1,11 +1,11 @@
 const templateStore = [
-    /*{
+    {
         'id': 1,
         'type': 'template',
-        'preview': '/images/previews/black/form_preview--black.svg',
+        'preview': 'assets/images/previews/black/form_preview--black.svg',
         'title': 'Form',
         'template': 'form',
-        'content': 'form.html',
+        'content': 'templates/html/form.html',
         'inputs': [
             {
                 'id': 'f-name',
@@ -50,7 +50,23 @@ const templateStore = [
                 'textarea': 'true',
             }
         ]
-    },*/
+    },
+    {
+        'id': 18,
+        'type': 'template',
+        'preview': 'assets/images/previews/black/file-upload_preview--black.svg',
+        'title': 'File Upload Template',
+        'template': 'component',
+        'content': 'templates/html/file-upload-template.html',
+    },
+    {
+        'id': 12,
+        'type': 'template',
+        'preview': 'assets/images/previews/black/hero_preview--black.svg',
+        'title': 'Hero template',
+        'template': 'component',
+        'content': 'templates/html/hero_template.html',
+    },
     {
         'id': 2,
         'type': 'template',
@@ -74,5 +90,29 @@ const templateStore = [
         'title': 'Template 2',
         'template': 'component',
         'content': 'templates/html/template_2.html',
+    },
+    {
+        'id': 5,
+        'type': 'template',
+        'preview': 'assets/images/previews/black/text-in-columns_template--black.svg',
+        'title': 'Template 3',
+        'template': 'component',
+        'content': 'templates/html/template_3.html',
+    },
+    {
+        'id': 6,
+        'type': 'template',
+        'preview': 'assets/images/previews/black/img_preview--black.svg',
+        'title': 'Template 4',
+        'template': 'component',
+        'content': 'templates/html/template_4.html',
+    },
+    {
+        'id': 7,
+        'type': 'template',
+        'preview': 'assets/images/previews/black/editor_preview--black.svg',
+        'title': 'Editor',
+        'template': 'editor',
+        'content': 'templates/html/editor.html',
     }
 ]

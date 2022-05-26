@@ -11,7 +11,7 @@
 
 .page-builder {
   display: flex;
-  height: calc(100vh - 120px);
+  height: 100vh;
   overflow: hidden;
   background: white;
 }
@@ -75,7 +75,7 @@
 }
 .page-builder__editable-area:before {
   content: "Lorem ipsum dolor sit amet, consectetur.";
-  margin-top: 40.5vh;
+  margin-top: 46.5vh;
   margin-inline: auto;
   animation: fadeInText 0.5s forwards;
   animation-delay: 0.75s;
@@ -103,7 +103,7 @@
   position: relative;
   flex: 0 0 15%;
   max-width: 15%;
-  height: calc(100vh - 160px);
+  height: 100vh;
   box-shadow: -10px 4px 30px rgba(0, 0, 0, 0.05);
   transition: 0.25s ease;
 }

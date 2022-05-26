@@ -291,7 +291,7 @@ const app = (() => {
     }
 
     const _initGalleryTypes = (that) => {
-        options.forEach(function (item) {
+        templateStore.forEach(function (item) {
             if (typeof item.appearance === 'undefined') return
             item.appearance.forEach(function (elem) {
                 let typeId = _createId(10)
@@ -370,7 +370,7 @@ const app = (() => {
     }
 
     const _initFormInputTypes = (that) => {
-        options.forEach(function (item) {
+        templateStore.forEach(function (item) {
             if (typeof item.inputs === 'undefined') return
 
             item.inputs.forEach(function (elem) {
@@ -391,7 +391,7 @@ const app = (() => {
         let inputId = _createId(10)
         const dataId = that.data('id')
         const templateId = that.closest('[data-template]').data('template')
-        const inputs = options.find(data => data.id == templateId).inputs
+        const inputs = templateStore.find(data => data.id == templateId).inputs
         const type = inputs.find(data => data.id == that.data('id')).type
         const title = inputs.find(data => data.id == that.data('id')).title
         const isTextarea = inputs.find(data => data.id == that.data('id')).textarea
@@ -1586,7 +1586,7 @@ const app = (() => {
             selector: `#${id}`,
             type: 'textarea',
             menubar: false,
-            inline: full ? false : true,
+            inline: !full,
             forced_root_block: false,
             convert_newlines_to_p: false,
             height: 250,
@@ -1601,7 +1601,6 @@ const app = (() => {
             extended_valid_elements: 'p[*],li,ul,ol,div[*]',
             plugins: [
                 'lists',
-                'powerpaste',
                 'autolink'
             ],
             toolbar: full ? 'undo redo styleselect bold italic alignleft aligncenter alignright alignjustify | bullist numlist outdent indent' : 'undo redo | bold italic underline',
@@ -1622,7 +1621,6 @@ const app = (() => {
                 }, 250));
             },
         };
-
         tinymce.init(template)
     }
 
