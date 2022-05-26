@@ -1601,7 +1601,8 @@ const app = (() => {
             extended_valid_elements: 'p[*],li,ul,ol,div[*]',
             plugins: [
                 'lists',
-                'autolink'
+                'autolink',
+                'powerpaste'
             ],
             toolbar: full ? 'undo redo styleselect bold italic alignleft aligncenter alignright alignjustify | bullist numlist outdent indent' : 'undo redo | bold italic underline',
             entity_encoding: 'raw',

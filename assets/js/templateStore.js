@@ -47,7 +47,7 @@ const templateStore = [
                 'id': 'submit',
                 'title': 'The submit button',
                 'type': 'submit',
-                'textarea': 'true',
+                'textarea': 'false',
             }
         ]
     },
