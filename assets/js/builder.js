@@ -1173,7 +1173,7 @@ const app = (() => {
             })
 
             .on('click', '.page-builder__sidebar-hide-btn', function () {
-                $('.page-builder_backup').toggleClass('sidebar-is-hidden');
+                $('.page-builder').toggleClass('sidebar-is-hidden');
                 _deselectTemplate(undefined, undefined, true)
             })
 
