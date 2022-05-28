@@ -511,6 +511,7 @@ const app = (() => {
         });
     }
 
+    // Is required to add server-side response and destination for the files
     const _upload = (file, that, droppedfiles) => {
         const formData = new FormData();
         formData.append('fileName', file);
@@ -521,6 +522,7 @@ const app = (() => {
         }
         xhr.onreadystatechange = function (e) {
             if (xhr.readyState === 4) {
+                // Is required to get and XHR response from the backend
                 const xhrResp = JSON.parse(xhr.response)
                 const dropArea = that.parent()
                 const fileName = xhrResp.initialPreviewConfig[0].caption
