@@ -27,29 +27,12 @@ $light-grey: #f8f8f8;
     scrollbar-color: $scrollbar transparent;
 }
 
-.builder-container textarea {
-    display: block;
-}
-
-.page-container {
-    .page-content-wrapper {
-        .footer {
-            display: none !important;
-        }
-    }
-
-    .page-content-wrapper {
-        .content {
-            padding-bottom: 0 !important;
-        }
-    }
-}
-
 .page-builder {
     display: flex;
     height: 100vh;
     overflow: hidden;
     background: white;
+    font-family: 'Helvetica Neue', sans-serif;
 
     &.sidebar-is-hidden {
         .page-builder__editable-area {
@@ -72,6 +55,24 @@ $light-grey: #f8f8f8;
     [data-template] {
         textarea {
             display: block !important;
+        }
+    }
+}
+
+.builder-container textarea {
+    display: block;
+}
+
+.page-container {
+    .page-content-wrapper {
+        .footer {
+            display: none !important;
+        }
+    }
+
+    .page-content-wrapper {
+        .content {
+            padding-bottom: 0 !important;
         }
     }
 }
@@ -199,7 +200,7 @@ $light-grey: #f8f8f8;
 
 .page-builder__sidebar-tab {
     padding: .5rem 1rem;
-    font-weight: bold;
+    font-weight: 500;
     position: relative;
     cursor: pointer;
     display: flex;
@@ -705,6 +706,8 @@ input[type="checkbox"] {
 }
 
 .theme-preview {
+    text-align: center;
+
     .theme__input {
         appearance: none;
         display: none;

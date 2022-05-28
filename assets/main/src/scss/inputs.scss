@@ -5,13 +5,19 @@ $blue: #59c4ff;
 $dark-blue: #095d8c;
 $light-grey: #e3e3e3;
 
+.select2-results__options{
+    padding: .5rem;
+}
+
 .select2-selection {
     padding: .5rem 1rem !important;
+    border: 1px solid rgba(6, 18, 35, 0.14) !important;
 }
 
 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice, [data-products] .select2-container--open .select2-selection--multiple .select2-selection__choice {
     background-color: #59c4ff21 !important;
     border: 1px solid #59c4ff7a !important;
+    width: max-content !important;
     transition: $transition;
 
     &:hover {
@@ -25,8 +31,9 @@ $light-grey: #e3e3e3;
 }
 
 .select2-selection__choice {
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
+    border-radius: 4rem !important;
     padding: .25rem 1.25rem .25rem .3rem !important;
     margin-right: 10px !important;
     cursor: pointer !important;
@@ -40,8 +47,8 @@ $light-grey: #e3e3e3;
         display: flex !important;
         align-items: center;
         justify-content: center;
-        border-radius: 1rem;
-        background-color: rgba(89, 196, 255, .75);
+        border-radius: 1rem !important;
+        background-color: rgba(89, 196, 255, .75) !important;
         background-image: url("../images/icons/close_white.svg");
         background-repeat: no-repeat;
         background-position: center;
@@ -60,6 +67,7 @@ $light-grey: #e3e3e3;
 .select2-container--classic.select2-container--open .select2-selection--multiple {
     transition: $transition;
     border: 1px solid $blue !important;
+    border-radius: 10px !important;
 }
 
 .select2-dropdown {

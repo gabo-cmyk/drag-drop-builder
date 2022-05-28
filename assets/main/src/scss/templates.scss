@@ -303,6 +303,7 @@ $light-grey: #f8f8f8;
     pointer-events: none;
     color: $black;
     margin-bottom: 1rem;
+    text-decoration: none;
 
     span {
         display: block;
@@ -469,8 +470,9 @@ $light-grey: #f8f8f8;
             opacity: .5;
         }
 
-        &:focus {
+        &:focus, &:focus-visible {
             border: 1px solid #a6a6a6;
+            outline: none;
         }
     }
 }

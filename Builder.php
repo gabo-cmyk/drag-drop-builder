@@ -102,10 +102,9 @@ class Builder extends InputWidget
             ['id' => '8', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/product_preview-1--black.svg', 'title' => 'Product Template', 'template' => 'component', 'content' => 'product-template.php'],
             ['id' => '9', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/product_preview-2--black.svg', 'title' => 'Product Template Alt', 'template' => 'component', 'content' => 'product-template_alt.php'],
             ['id' => '10', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/product_preview-3--black.svg', 'title' => 'Product Template 3', 'template' => 'component', 'content' => 'product-template_three.php'],
-
-            ['id' => '11', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/inst_preview--black.svg', 'title' => 'Insta template', 'template' => 'component', 'content' => 'insta-template.php'],
-
+            ['id' => '11', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/inst_preview--black.svg', 'title' => 'Insta template', 'template' => 'component', 'content' => 'insta-template.html'],
             ['id' => '19', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/yt_preview--black.svg', 'title' => 'Youtube template', 'template' => 'component', 'content' => 'youtube-template.php'],
+
             ['id' => '14', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/gallery_preview--black.svg', 'title' => 'Gallery', 'template' => 'gallery', 'content' => 'gallery_template.php', 'appearance' => [
                 ['title' => 'type-a', 'preview' => $ba->baseUrl . '/images/previews/gallery_type-1_preview.svg', 'content' => 'galleries/type_a.php'],
                 ['title' => 'type-b', 'preview' => $ba->baseUrl . '/images/previews/gallery_type-2_preview.png', 'content' => 'galleries/type_b.php'],
@@ -116,9 +115,11 @@ class Builder extends InputWidget
                 ['id' => 'p-3', 'title' => 'product 3', 'href' => '/product-3', 'thumbnail' => $ba->baseUrl . '/images/thumbnails/product_thumbnail--B.jpg'],
             ]],
             ['id' => '15', 'type' => 'layout', 'preview' => $ba->baseUrl . '/images/previews/black/layout_preview--black.svg', 'title' => 'Layout 1', 'template' => 'component', 'content' => 'layout.php'],
-            ['id' => '16', 'type' => 'layout', 'preview' => $ba->baseUrl . '/images/previews/black/layout_preview-2--black.svg', 'title' => 'Layout 2', 'template' => 'component', 'content' => 'layout_2.php'],
-            ['id' => '17', 'type' => 'layout', 'preview' => $ba->baseUrl . '/images/previews/black/layout_preview-3--black.svg', 'title' => 'Layout 3', 'template' => 'component', 'content' => 'layout_3.php'],
+            ['id' => '16', 'type' => 'layout', 'preview' => $ba->baseUrl . '/images/previews/black/layout_preview-2--black.svg', 'title' => 'Layout 2', 'template' => 'component', 'content' => 'layout_2.html'],
+            ['id' => '17', 'type' => 'layout', 'preview' => $ba->baseUrl . '/images/previews/black/layout_preview-3--black.svg', 'title' => 'Layout 3', 'template' => 'component', 'content' => 'layout_3.html'],
+
             ['type' => 'theme', 'preview' => $ba->baseUrl . '/images/previews/theme_preview-standard.svg', 'title' => 'Standard theme', 'class' => 'standard-theme', 'colours' => ['background' => 'transparent', 'text' => 'black', 'pattern' => 'false']],
+
             ['type' => 'theme', 'preview' => $ba->baseUrl . '/images/previews/theme_preview-dark.svg', 'title' => 'Dark theme', 'class' => 'dark-theme', 'colours' => ['background' => 'black', 'text' => 'white', 'pattern' => 'false']],
             ['type' => 'theme', 'preview' => $ba->baseUrl . '/images/previews/theme_preview-orange.svg', 'title' => 'Orange theme', 'class' => 'orange-theme', 'colours' => ['background' => 'orange', 'text' => 'white', 'pattern' => 'false']],
         ];
