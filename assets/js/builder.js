@@ -522,7 +522,7 @@ const app = (() => {
         }
         xhr.onreadystatechange = function (e) {
             if (xhr.readyState === 4) {
-                // Is required to get and XHR response from the backend
+                // Is required to get an XHR response from the backend
                 const xhrResp = JSON.parse(xhr.response)
                 const dropArea = that.parent()
                 const fileName = xhrResp.initialPreviewConfig[0].caption
