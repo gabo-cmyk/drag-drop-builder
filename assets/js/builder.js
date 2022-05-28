@@ -977,7 +977,9 @@ const app = (() => {
                 $(this).find('form').removeClass('is-updated')
                 $(this).find('.form-input').each(function () {
                     const createInputId = _createId(10)
+                    console.log($(this).find('input'))
                     $(this).find('input').attr({'id': createInputId, 'checked': false})
+                    $(this).find('input').prop('checked', false)
                     $(this).find('label').attr('for', createInputId)
                 })
                 $(this).find('.input-wrapper').each(function () {
