@@ -2165,7 +2165,7 @@ button.swiper-pagination-bullet {
 }
 
 .gallery-types {
-  padding: 4rem 1rem;
+  padding: 4rem 1.1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

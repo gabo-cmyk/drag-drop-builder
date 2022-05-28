@@ -3,9 +3,9 @@ const app = (() => {
     let loadedTemplate = null;
     let loadedGalleryType = null;
     let currentEditable = null;
+    let currentGallery = null;
     let inactiveEditable = [];
     let deletableFiles = [];
-    let currentGallery = null;
     let dragIsActive = false;
     let firstDropIsDone = false;
     let itemIsDragged = false;
@@ -39,7 +39,7 @@ const app = (() => {
                 </div>`);
 
     // Handler function for get templates. (Recomennded for static builds)
-    const _getTemplate = (template, handleData) => {
+    const _getTemplate = (template) => {
         let data = ''
         $.ajax({
             type: 'POST',
