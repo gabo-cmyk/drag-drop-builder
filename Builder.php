@@ -99,10 +99,12 @@ class Builder extends InputWidget
             ['id' => '5', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/text-in-columns_template--black.svg', 'title' => 'Template 3', 'template' => 'component', 'content' => 'template_3.php'],
             ['id' => '6', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/img_preview--black.svg', 'title' => 'Template 4', 'template' => 'component', 'content' => 'template_4.php'],
             ['id' => '7', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/editor_preview--black.svg', 'title' => 'Editor', 'template' => 'editor', 'content' => 'editor.php'],
-            ['id' => '8', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/product_preview-1--black.svg', 'title' => 'Product Template', 'content' => 'product-template.php'],
+            ['id' => '8', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/product_preview-1--black.svg', 'title' => 'Product Template', 'template' => 'component', 'content' => 'product-template.php'],
             ['id' => '9', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/product_preview-2--black.svg', 'title' => 'Product Template Alt', 'template' => 'component', 'content' => 'product-template_alt.php'],
             ['id' => '10', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/product_preview-3--black.svg', 'title' => 'Product Template 3', 'template' => 'component', 'content' => 'product-template_three.php'],
+
             ['id' => '11', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/inst_preview--black.svg', 'title' => 'Insta template', 'template' => 'component', 'content' => 'insta-template.php'],
+
             ['id' => '19', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/yt_preview--black.svg', 'title' => 'Youtube template', 'template' => 'component', 'content' => 'youtube-template.php'],
             ['id' => '14', 'type' => 'template', 'preview' => $ba->baseUrl . '/images/previews/black/gallery_preview--black.svg', 'title' => 'Gallery', 'template' => 'gallery', 'content' => 'gallery_template.php', 'appearance' => [
                 ['title' => 'type-a', 'preview' => $ba->baseUrl . '/images/previews/gallery_type-1_preview.svg', 'content' => 'galleries/type_a.php'],

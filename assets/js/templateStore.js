@@ -114,5 +114,29 @@ const templateStore = [
         'title': 'Editor',
         'template': 'editor',
         'content': 'templates/html/editor.html',
+    },
+    {
+        'id': 8,
+        'type': 'template',
+        'preview': 'assets/images/previews/black/product_preview-1--black.svg',
+        'title': 'Product Template',
+        'template': 'component',
+        'content': 'templates/html/product-template.html',
+    },
+    {
+        'id': 9,
+        'type': 'template',
+        'preview': 'assets/images/previews/black/product_preview-2--black.svg',
+        'title': 'Product Template Alt',
+        'template': 'component',
+        'content': 'templates/html/product-template_alt.html',
+    },
+    {
+        'id': 10,
+        'type': 'template',
+        'preview': 'assets/images/previews/black/product_preview-3--black.svg',
+        'title': 'Product Template 3',
+        'template': 'component',
+        'content': 'templates/html/product-template_three.html',
     }
 ]

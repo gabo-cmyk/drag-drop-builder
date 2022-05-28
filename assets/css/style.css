@@ -252,6 +252,7 @@
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
+  border: 1px solid #ededed;
   padding: 0.75rem;
   top: calc(100% + 0.5rem);
   z-index: 999999;
@@ -648,6 +649,7 @@ input[type=checkbox]:checked:before {
   color: #000000;
   padding: 0.75rem 0;
   width: 100%;
+  text-decoration: none;
   background-color: white;
   border: 1px solid #D0D0D0;
   margin-top: 1.0625rem;
