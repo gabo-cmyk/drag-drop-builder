@@ -38,7 +38,7 @@ const app = (() => {
                     </span>
                 </div>`);
 
-    // Handler function for get templates. (Recomennded for static builds)
+    // Handler function for get templates. (Recommended for static builds)
     const _getTemplate = (template) => {
         let data = ''
         $.ajax({
