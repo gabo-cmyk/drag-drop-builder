@@ -803,7 +803,7 @@ const app = (() => {
             that.append(buttons)
         }
         if (that.hasClass('layout') || that.parents('.layout').length) {
-            _deselectTemplate($('.layout, .template'), that)
+            _deselectTemplate($('.layout .template'), that)
         } else {
             _deselectTemplate($('.template'), that)
         }
