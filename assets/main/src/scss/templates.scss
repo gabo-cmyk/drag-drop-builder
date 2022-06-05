@@ -1130,6 +1130,13 @@ $light-grey: #f8f8f8;
 
     input[type="checkbox"] {
         height: auto !important;
+        & + label{
+            margin-bottom: 0;
+        }
+    }
+
+    [data-type="checkbox"]{
+        align-items: center;
     }
 
     input[type="submit"] {

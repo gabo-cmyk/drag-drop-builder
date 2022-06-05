@@ -2359,6 +2359,12 @@ input[type=checkbox]:checked:before {
 [data-form] .form input[type=checkbox] {
   height: auto !important;
 }
+[data-form] .form input[type=checkbox] + label {
+  margin-bottom: 0;
+}
+[data-form] .form [data-type=checkbox] {
+  align-items: center;
+}
 [data-form] .form input[type=submit] {
   background-color: #59c4ff;
   color: #ffffff !important;
