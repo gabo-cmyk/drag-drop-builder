@@ -4,12 +4,12 @@ const app = (() => {
     let loadedGalleryType = null;
     let currentEditable = null;
     let currentGallery = null;
-    let inactiveEditable = [];
-    let deletableFiles = [];
     let dragIsActive = false;
     let firstDropIsDone = false;
     let itemIsDragged = false;
     let deleteBtnIsExist = false;
+    let inactiveEditable = [];
+    let deletableFiles = [];
 
     const contentStore = $(`#content-store`);
     const editorField = $('.page-builder__editable-area');
@@ -352,6 +352,7 @@ const app = (() => {
                                 <img class="slide-img" src="${imgSrc}" alt="">
                                 <span class="img-caption">${imgCaption}</span>
                             </div>`)
+
             galleryPreview.find('[data-slides]').append(slide)
             loadedGalleryType = galleryPreview[0].outerHTML
         })
